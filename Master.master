@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" CodeFile="Master.master.vb" Inherits="Master" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>New Application by Maggy Maffia</title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+        <link href="<%= ResolveClientUrl("~/style_NewApp.css") %>" rel="stylesheet" type="text/css" />
+        
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    
+         <%--Required for use of AJAX Control Toolkit --%>
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePartialRendering="true" />
+        
+        <div class="LoginStatusStyle">
+            <asp:LoginView ID="loginView" runat="server">
+                <AnonymousTemplate>
+                    <i>Currently logged out</i>
+                    <br />
+                    <asp:LoginStatus ID="loginStatus" runat="server" LoginText="[Log In]" LogoutText="[Log Out]" />
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    <asp:LoginName ID="loginName" runat="server" FormatString="Greetings, <b>{0}</b>!" />
+                    <br />
+                    <asp:LoginStatus ID="loginStatus" runat="server" LoginText="[Log In]" LogoutText="[Log Out]" />
+                </LoggedInTemplate>
+            </asp:LoginView>
+        </div>
+        
+        <h1>New Application</h1>
+        <h2>by Maggy Maffia</h2>
+        
+        <div id="outer_div">
+            <%-- Content is rendered here--%>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%-----------------------------%>
+        </div>
+        
+        <div class="Footer">
+            Copyright &copy; 2012, <a href="mailto:maggy@zogglet.com?subject=About your awesome new application">Maggy Maffia</a>
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,511 @@
+﻿@media print
+{
+    #printItems_pnl 
+    {
+        display: none;
+    }
+    
+    body 
+    {
+        background: #FFFFFF;
+    }
+}
+
+@media screen
+{
+    body
+    {
+        background: #efe79f;
+    }
+}
+
+body 
+{
+    margin: 25px auto 25px auto;
+    font-family: Verdana, Sans-Serif;
+    color: #393726;
+}
+
+a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #235e13;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #173f0d;
+}
+
+#outer_div
+{
+    width: 100%;
+    text-align: center;
+}
+
+h1
+{
+    display: block;
+    text-align: left;
+    padding: 10px 0 10px 25px;
+    margin: 0;
+    border-bottom: solid 8px #9a9566;
+    font-family: Georgia, Serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #a02020;
+}
+
+h2
+{
+    text-align: right;
+    font-weight: bold;
+    font-family: Georgia, Serif;
+    padding: 10px 25px 0 0;
+    margin: 0 0 25px 0;
+    color: #5b1212;
+    font-style: italic;
+    font-size: 25px;
+}
+
+h3
+{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+    color: #112e09;
+    padding: 0;
+    margin: 5px;
+}
+
+.LoginStatusStyle
+{
+    background: #c3bd81;
+    padding: 10px;
+    margin: 10px 25px 0 10px;
+    font-size: 10px;
+    text-align: left;
+    width: 150px;
+    float: right;
+}
+
+#outer_table
+{
+    background: #e1da96;
+    border: solid 2px #d1ca8a;
+    width: 650px;
+    padding: 10px;
+    font-size: 11px;
+    margin: 0 auto 0 auto;
+}
+
+#blank_outer_table
+{
+    padding: 10px;
+    font-size: 11px;
+    margin: 0 auto 0 auto;
+}
+
+.options_area
+{
+    width: 100%;
+    background: #c3bd81;
+    padding: 10px;
+    text-align: left;
+}
+
+.ButtonStyle
+{
+    font-family: Verdana, Sans-Serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #ffffff;
+    background: #173f0d;
+    border: solid 2px #112e09;
+}
+
+.InputStyle, input[type="Text"]
+{
+    border: solid 1px #5e5b3e;
+    background: #f1ecbe;
+    font-weight: bold;
+    font-family: Verdana, Sans-Serif;
+    font-size: 11px;
+}
+
+.Divider
+{
+    width: 100%;
+    display: block;
+    border-bottom: solid 2px #9a9566;
+}
+
+.Footer
+{
+   text-align: center;
+   border-top: solid 8px #9a9566;
+   margin: 25px 0 25px 0;
+   padding: 10px 0 0 0;
+   font-size: 11px;
+}
+
+.PrintFooter
+{
+   text-align: center;
+   padding: 10px 0 10px 0;
+   margin: 25px 0 25px 0;
+   font-size: 11px;
+}
+
+.CPanelStyle
+{
+    padding: 5px 0 5px 0;
+    text-align: left;
+    border-bottom: solid 2px #5b1212;
+}
+.CategoryCompleteStyle
+{
+    padding: 5px 0 5px 0;
+    text-align: left;
+    border-bottom: solid 2px #5b1212;
+    background: #b1bb75;
+}
+
+.CPanelText
+{
+    color: #235e13;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.InnerCPanelStyle
+{
+    padding: 2px;
+    border-bottom: solid 2px #7d4534;
+}
+.InnerCPanelText
+{
+    font-weight: bold;
+    color: #112e09;
+}
+.InnerEmptyText
+{
+    font-weight: bold;
+    color: #5b1212;
+    font-style: italic;
+}
+
+.GVStyle
+{
+    background: #bfa875;
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #5b1212;
+}
+
+.GVHeaderStyle
+{
+    background: #5b1212;
+    padding: 2px;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.GVHeaderStyle a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.GVHeaderStyle a:hover
+{
+    text-decoration: underline;
+}
+
+.GVItemStyle
+{
+    background: #bfa875;
+    padding: 2px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 11px;
+}
+
+.GVNameStyle
+{
+    font-weight: bold;
+    padding: 2px;
+    color: #bfa875;
+    background: #5b1212;
+    width: 125px;
+}
+
+.GVNameStyle a, .GVItemCompleteStyle a
+{
+    color: #bfa875;
+}
+.GVNameStyle a:hover, .GVItemCompleteStyle a:hover
+{
+    text-decoration: underline;
+}
+
+.GVItemCompleteStyle
+{
+    background: #173f0d;
+    color: #bfa875;
+    width: 125px;
+    font-weight: bold;
+}
+
+.GVItemPartialStyle
+{
+    background: #e5cf72;
+    width: 125px;
+    color: #393726;
+    font-weight: bold;
+    font-style: italic;
+}
+.GVItemPartialStyle a
+{
+    color: #393726;
+}
+.GVItemPartialStyle a:hover
+{
+    text-decoration: underline;
+}
+
+.GVInnerItemStyle
+{
+    background: #a6825c;
+    color: #5b1212;
+    padding: 2px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.GVInnerItemButtonStyle
+{
+    padding: 2px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 10px;
+    color: #5b1212;
+}
+.GVInnerItemButtonStyle a
+{
+    color: #5b1212;
+    text-decoration: none;
+}
+.GVInnerItemButtonStyle a:hover
+{
+    text-decoration: underline;
+}
+
+.GVInnerHeaderStyle
+{
+    background: #7d4534;
+    color: #bfa875;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.GVInnerHeaderStyle a
+{
+    color: #bfa875;
+    text-decoration: none;
+}
+.GVInnerHeaderStyle a:hover
+{
+    text-decoration: underline;
+}
+
+.GVInnerCompleteStyle
+{
+    background: #3b5021;
+    color: #bfa875;
+}
+.GVInnerCompleteStyle a
+{
+    color: #bfa875;
+}
+
+.GVInnerDivider
+{
+    border-bottom: solid 2px #7d4534;
+    width: 100%;
+    display: block;
+}
+
+.GVInnerImageStyle
+{
+    border: solid 1px #5b1212;
+}
+.GVInnerImagesHeaderStyle
+{
+    background: #7d4534;
+    color: #bfa875;
+    font-weight: bold;
+    display: block;
+    padding: 1px;
+}
+
+.ModalStyle
+{
+    border: solid 2px #7a7651;
+    background: #9a9566;
+    padding: 10px;
+    color: #5b1212;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.ModalDivider
+{
+    border-bottom: solid 2px #7a7651;
+    width: 100%;
+    display: block;
+}
+
+.modal_options_area
+{
+    width: 100%;
+    background: #858158;
+    padding: 10px;
+    text-align: left;
+}
+.modal_options_area td
+{
+    vertical-align: top;
+}
+
+.PromptStyle
+{
+    font-weight: normal;
+    font-style: italic;
+    color: #393726;
+}
+
+.ToolTipStyle
+{
+    padding: 5px;
+    font-size: 9px;
+    background: #9a9566;
+    color: #393726;
+    border: solid 1px #3b5021;
+    width: 200px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.ToolTipCompleteStyle
+{
+    padding: 5px;
+    font-size: 9px;
+    background: #112e09;
+    color: #958e5b;
+    border: solid 1px #3b5021;
+    width: 200px;
+    font-weight: normal; 
+}
+.ToolTipIncompleteStyle
+{
+    padding: 5px;
+    font-size: 9px;
+    background: #5b1212;
+    color: #a6825c;
+    border: solid 1px #7d4534;
+    width: 200px;
+    font-weight: normal;
+}
+
+.ValidatorCalloutStyle
+{
+    background-color: #bf6d51;
+}
+
+.ValidatorCalloutStyle div, .ValidatorCalloutStyle td
+{
+    background-color: #bf6d51;
+    border: solid 1px #a02020;
+    font-size: 10px;
+    padding: 3px 0 3px 0;
+    color: #a02020;
+}
+
+.FormViewLbl
+{
+    font-weight: bold;
+    color: #efe79f;
+}
+
+.StandAloneFormViewLbl
+{
+    font-weight: bold;
+    color: #5b1212;
+}
+
+.FormViewTbl
+{
+    width: 100%;
+}
+.FormViewTbl td
+{
+    vertical-align: top;
+    text-align: left;
+}
+
+.PrintPnlStyle
+{
+    background: #9a9566;
+    padding: 5px;
+    font-size: 10px;
+    width: 225px;
+}
+
+.SummaryStyle
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+.OverWeekStyle
+{
+    font-family: Georgia, Serif;
+    color: #235e13;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.UnderWeekStyle
+{
+    font-family: Georgia, Serif;
+    color: #a02020;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.RetainActiveStyle
+{
+    font-style: italic;
+    color: #a02020;
+}
+
+.ImageStyle
+{
+    border: solid 1px #9a9566;
+}
+
+.ListImagePnlStyle
+{
+    padding: 5px;
+}
